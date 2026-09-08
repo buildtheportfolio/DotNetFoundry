@@ -24,7 +24,7 @@ DotNetFoundry/
 └── README.md
 ```
 
-The hub automatically discovers project folders under `projects/`. `Ideas.md` is the backlog and source of truth for the collection.
+The hub automatically discovers project folders under `projects/`. A directory is included in the project catalog only when it contains a `.csproj`; `_template` is always excluded.
 
 ## Add a project
 
@@ -33,6 +33,7 @@ The hub automatically discovers project folders under `projects/`. `Ideas.md` is
 3. Implement the project described in `Ideas.md`.
 4. Run `dotnet run` from the project directory.
 5. Push the folder to GitHub.
+6. The project is automatically discovered by the hub without editing a registry.
 
 ## Project rules
 
